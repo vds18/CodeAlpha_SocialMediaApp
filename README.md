@@ -55,7 +55,7 @@ To design and develop a basic social media application that allows users to:
 
 ```bash
 # Clone repository
-git clone https://github.com/vds18/CodeAlpha_SocialMediaApp.git
+git clone https://github.com/vds18/CodeAlpha_SocialMediaApp
 
 # Navigate into project
 cd CodeAlpha_SocialMediaApp
