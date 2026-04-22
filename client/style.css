@@ -1,0 +1,246 @@
+/* 🔥 GOOGLE FONT (add in HTML too) */
+/* font-family: 'Poppins', sans-serif; */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌌 BODY */
+/* 🌌 BODY (ANIMATED GRADIENT) */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0, #dbeafe);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+  color: #111;
+  min-height: 100vh;
+}
+
+/* 🔥 NAVBAR */
+.navbar {
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(14px);
+  color: white;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.navbar h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* LOGOUT BUTTON */
+#logoutBtn {
+  background: linear-gradient(135deg, #ff4d4d, #ff0000);
+  color: white;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+}
+
+#logoutBtn:hover {
+  transform: scale(1.05);
+}
+
+/* 📦 CONTAINER */
+.container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 12px;
+}
+
+/* 🧊 CARD */
+.card {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(16px);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* ✍ INPUT */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.15);
+}
+
+/* 🔘 BUTTON */
+button {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 15px rgba(99,102,241,0.3);
+}
+
+/* 🔁 SWITCH TEXT */
+.switch {
+  text-align: center;
+  margin-top: 12px;
+  color: #6366f1;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.switch:hover {
+  text-decoration: underline;
+}
+
+/* 📱 POST */
+.post {
+  background: white;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  animation: fadeIn 0.4s ease;
+}
+
+.post:hover {
+  transform: translateY(-4px);
+}
+
+/* 👤 USERNAME */
+.clickable-user {
+  cursor: pointer;
+  color: #6366f1;
+  font-weight: 500;
+}
+
+.clickable-user:hover {
+  text-decoration: underline;
+}
+
+/* 📝 TEXT */
+.post p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+/* ❤️ ACTIONS */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background: #f1f5f9;
+  color: #333;
+  border-radius: 20px;
+}
+
+.actions button:hover {
+  background: #e2e8f0;
+}
+
+/* 💬 COMMENTS */
+.comments {
+  margin-top: 10px;
+}
+
+.comments p {
+  background: #f1f5f9;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+/* 💬 COMMENT BOX */
+.comment-box {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.comment-box input {
+  flex: 1;
+}
+
+/* 👤 PROFILE */
+.profile-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.profile-card h2 {
+  margin-bottom: 8px;
+}
+
+.profile-card p {
+  color: #666;
+}
+
+/* 🔍 DISCOVER TITLE */
+h3 {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* ✨ ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px auto;
+  }
+
+  .navbar {
+    padding: 12px 20px;
+  }
+}
+
+/* ✨ BACKGROUND ANIMATION */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

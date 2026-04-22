@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialApp</title>
+
+  <!-- 🔥 GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- 🎨 CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🔥 NAVBAR -->
+  <div class="navbar">
+    <h2>SocialApp</h2>
+
+    <div>
+      <span id="userLabel">Not logged in</span>
+      <button id="logoutBtn" onclick="logout()" style="display:none;">Logout</button>
+    </div>
+  </div>
+
+  <!-- 📦 MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- 🔐 AUTH CARD -->
+    <div class="card" id="authCard">
+
+      <h3 id="authTitle">Login</h3>
+
+      <!-- LOGIN -->
+      <div id="loginBox">
+        <input id="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+      </div>
+
+      <!-- REGISTER -->
+      <div id="registerBox" style="display:none;">
+        <input id="regName" placeholder="Name">
+        <input id="regEmail" placeholder="Email">
+        <input id="regPassword" type="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+      </div>
+
+      <!-- TOGGLE -->
+      <p class="switch" onclick="toggleAuth()" id="toggleText">
+        Don't have an account? Register
+      </p>
+
+    </div>
+
+    <!-- ✍ CREATE POST -->
+    <div class="card" id="postBox" style="display:none;">
+      <textarea id="content" placeholder="What's on your mind?"></textarea>
+      <button onclick="createPost()">Post</button>
+    </div>
+
+    <!-- 🔍 DISCOVER / NAV -->
+    <div class="card" id="discoverBox" style="display:none;">
+      <h3>Explore</h3>
+
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <button onclick="loadPosts()">🏠 Home Feed</button>
+        <button onclick="loadUsers()">🔍 Discover Users</button>
+      </div>
+    </div>
+
+    <!-- 📰 FEED -->
+    <div id="feed"></div>
+
+  </div>
+
+  <!-- 📜 SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
